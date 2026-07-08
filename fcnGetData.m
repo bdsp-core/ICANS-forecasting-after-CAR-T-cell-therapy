@@ -4,8 +4,8 @@ function [X, Xt, Yt, SID, SID_1, variableNames] = fcnGetData
 % X, Y
 % X : 
 
-A = readtable('AllBWH_5days_updated01172022.xlsx');% read data from .xlsx file
-B = [A.MRN A.meanscore A.Age A.CRP A.Temp A.Ferritin A.Procalcitonin A.IL_6 A.WBC];
+A = readtable('AllBWH_5days_deID.xlsx');% read data from .xlsx file
+B = [A.SID A.meanscore A.Age A.CRP A.Temp A.Ferritin A.Procalcitonin A.IL_6 A.WBC];
 
 nan_idx = find(~isnan(B(:,2)));% remove all missing data
 data_final = B(nan_idx,:);

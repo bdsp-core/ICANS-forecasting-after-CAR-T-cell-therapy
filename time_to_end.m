@@ -3,8 +3,8 @@ rng(10)
 
 load LR_prob_allp_Lasso_LOO
 
-A = readtable('AllBWH_5days_updated01172022.xlsx');% read data from .xlsx file
-B = [A.MRN A.meanscore];
+A = readtable('AllBWH_5days_deID.xlsx');% read data from .xlsx file
+B = [A.SID A.meanscore];
 nan_idx = find(~isnan(B(:,2)));% remove all missing data
 data_final = B(nan_idx,:);
 sid = unique(data_final(:,1)); %
