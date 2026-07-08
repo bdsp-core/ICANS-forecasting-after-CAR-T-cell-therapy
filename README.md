@@ -34,7 +34,9 @@ is lossless (reproduces the raw grade matrix exactly). See [DATA_SOURCE.md](DATA
 
 ## Published dataset
 
-Also published on BDSP: https://bdsp.io/content/icans-forecasting-car-t/ *(see DOIs below once live)*.
+Published on BDSP: **https://bdsp.io/content/jyuf7m1cislzg90ew5k6/1.0.0/**
+DOIs: [10.60508/4f5c-0z25](https://doi.org/10.60508/4f5c-0z25) (v1.0.0) · [10.60508/5ppk-g283](https://doi.org/10.60508/5ppk-g283) (core).
+The de-identified data are also at `s3://bdsp-opendata-credentialed/icans-forecasting-car-t/`.
 
 ## License
 
